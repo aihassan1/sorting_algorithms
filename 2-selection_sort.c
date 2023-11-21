@@ -1,11 +1,12 @@
 #include "sort.h"
+
 /**
- * swap - Swaps the values of two integers.
- * @a: Pointer to the first integer
- * @b: Pointer to the second integer
- *
- * Description: This function swaps the values of two integers
- */
+* swap - Swaps the values of two integers.
+* @a: Pointer to the first integer
+* @b: Pointer to the second integer
+*
+* Description: This function swaps the values of two integers
+*/
 void swap(int *a, int *b)
 {
 	int temp = *a;
@@ -14,20 +15,20 @@ void swap(int *a, int *b)
 }
 
 /**
- * selection_sort - Sorts an array of integers in ascending order using the    
- *                  Selection sort algorithm.
- * @array: The array to be sorted
- * @size: The size of the array
- *
- * Description: sorts an array of integers in ascending order using
- *              the Selection sort algorithm
- */
+* selection_sort - Sorts an array of integers in ascending order using the
+*                  Selection sort algorithm.
+* @array: The array to be sorted
+* @size: The size of the array
+*
+* Description: sorts an array of integers in ascending order using
+*              the Selection sort algorithm
+*/
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min_index;
-    
-    if (array == NULL || size < 2)
-	   return;
+
+if (array == NULL || size < 2)
+return;
 
 	for (i = 0; i < size; i++)
 	{
