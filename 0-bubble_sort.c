@@ -7,7 +7,14 @@
 *
 * Return: None.
 */
-void swap(int *a, int *b);
+void swap(int *a, int *b)
+{
+int temp;
+temp = *a;
+*a = *b;
+*b = temp;
+}
+
 
 /**
 * bubble_sort - Sorts an array of integers in ascending order
@@ -38,19 +45,4 @@ print_array(array, size);
 if (!swapped)
 break;
 }
-}
-
-/**
-* swap - Swaps the values of two integers.
-* @a: Pointer to the first integer.
-* @b: Pointer to the second integer.
-*
-* Return: None.
-*/
-void swap(int *a, int *b)
-{
-int temp;
-temp = *a;
-*a = *b;
-*b = temp;
 }
